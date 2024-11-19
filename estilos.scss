@@ -16,9 +16,10 @@ main {
     @include caja_personalizada(700px, 100%)
 }
 
-.cabecera{
+.cabecera {
     padding-top: 10px;
 }
+
 nav ul li a {
     text-decoration: none;
     color: rgb(165, 163, 163);
@@ -44,12 +45,12 @@ header ul li a:hover {
 
 @keyframes miAnimacion {
     from {
-        color: rgb(28, 31, 29);
+        color: rgb(98, 107, 100);
     }
 }
 
 .titulo {
-    animation: miAnimacion 3s;
+    animation: miAnimacion 4s infinite;
     color: white;
     padding-bottom: 10px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -92,6 +93,11 @@ body {
     background-repeat: no-repeat;
     width: 50%;
     margin-left: 10px;
+    transition-duration: 0.5s;
+}
+.caja1:hover {
+    transition-duration: 1s;
+    opacity: 0.7;
 
 }
 
@@ -99,8 +105,13 @@ body {
     background-image: url("img/cuadro2.jpg");
     background-repeat: no-repeat;
     width: 50%;
+    transition-duration: 0.5s;
 }
+.caja2:hover {
+    transition-duration: 1s;
+    opacity: 0.7;
 
+}
 .tit_eu {
     color: white;
 }
@@ -126,8 +137,15 @@ body {
     background-image: url("img/cuadro3.jpg");
     background-repeat: no-repeat;
     width: 50%;
+    transition-duration: 0.5s;
 }
-.img3{
+.caja3:hover {
+    transition-duration: 1s;
+    opacity: 0.7;
+
+}
+
+.img3 {
     width: 300px;
     transition-property: width;
     position: absolute;
@@ -136,15 +154,22 @@ body {
 
 .img3:hover {
     width: 500px;
- 
+
 }
 
 .caja4 {
     background-image: url("img/cuadro4.jpg");
     background-repeat: no-repeat;
     width: 50%;
+    transition-duration: 0.5s;
 }
-.img4{
+.caja4:hover {
+    transition-duration: 1s;
+    opacity: 0.7;
+
+}
+
+.img4 {
     width: 300px;
     transition-property: width;
     position: absolute;
@@ -155,8 +180,8 @@ body {
 .img4:hover {
     transform: translate(-500px) scale(1.5);
     position: absolute;
-	transition: all 1s ease-in-out;
-  
+    transition: all 1s ease-in-out;
+
 }
 
 .section_a {
@@ -180,7 +205,7 @@ body {
     width: 650px;
     height: 300px;
     object-fit: cover;
-    opacity: 0.5;
+    opacity: 0.7;
 
 
 }
@@ -206,7 +231,7 @@ body {
     margin: 0 auto;
     width: 650px;
     height: 300px;
-    opacity: 0.5;
+    opacity: 0.7;
 
 }
 
@@ -254,9 +279,11 @@ body {
     height: 100%;
     padding-left: 10px;
 }
-hmtl{
+
+html {
     scroll-behavior: smooth;
 }
+
 footer {
     scroll-behavior: smooth;
     text-align: center;
